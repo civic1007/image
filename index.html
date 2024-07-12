@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Server</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .image-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .image-card {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 200px;
+        }
+        .image-card img {
+            max-width: 100%;
+            height: auto;
+        }
+        .image-card h2 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .image-card a {
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Server</h1>
+    <div class="image-list">
+        <!-- Example images -->
+        <div class="image-card">
+            <img src="https://via.placeholder.com/150.png" alt="Sample Image 1">
+            <h2>Sample Image 1</h2>
+            <a href="https://via.placeholder.com/150.png" target="_blank" rel="noopener noreferrer">
+                my logo
+            </a>
+        </div>
+        <div class="image-card">
+            <img src="/images/avatar.png" alt="avatar">
+            <h2>Sample Image 2</h2>
+            <a href="localhost:3000/images/avatar.png target="_blank" rel="noopener noreferrer">
+                https://via.placeholder.com/200.png
+            </a>
+        </div>
+        <!-- Add more image cards here -->
+    </div>
+</body>
+</html>
